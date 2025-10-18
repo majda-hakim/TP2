@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
-    <title>Page de destination</title>
+    <title>Succès</title>
     <style>
         body {
             font-family: "Segoe UI", sans-serif;
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -13,17 +13,17 @@
             margin: 0;
         }
 
-        .container {
+        .message-box {
             background-color: white;
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            width: 450px;
+            width: 400px;
             text-align: center;
         }
 
         h2 {
-            color: #1565c0;
+            color: #2e7d32;
             margin-bottom: 20px;
         }
 
@@ -35,7 +35,7 @@
 
         a {
             text-decoration: none;
-            background-color: #1565c0;
+            background-color: #2e7d32;
             color: white;
             padding: 10px 20px;
             border-radius: 8px;
@@ -43,7 +43,7 @@
         }
 
         a:hover {
-            background-color: #0d47a1;
+            background-color: #1b5e20;
         }
 
         .footer {
@@ -55,16 +55,10 @@
 </head>
 <body>
 
-<div class="container">
-    <%
-        System.out.println("===> Maintenant dans ForwardTarget.jsp");
-    %>
-
-    <h2>Page de destination du Forward</h2>
-    <p>Le traitement a été transféré ici avec succès !</p>
-
-    <a href="login.jsp">Retour à la page de connexion</a>
-
+<div class="message-box">
+    <h2>Authentification réussie 🎉</h2>
+    <p>Bienvenue ! Vous êtes connecté avec succès.</p>
+    <a href="login.jsp">Se déconnecter</a>
     <div class="footer">© 2025 ENSA Khouribga</div>
 </div>
 

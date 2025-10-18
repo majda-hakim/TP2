@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
-    <title>Page de destination</title>
+    <title>Erreur</title>
     <style>
         body {
             font-family: "Segoe UI", sans-serif;
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            background: linear-gradient(135deg, #ffcdd2, #ef9a9a);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -13,17 +13,17 @@
             margin: 0;
         }
 
-        .container {
+        .message-box {
             background-color: white;
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            width: 450px;
+            width: 400px;
             text-align: center;
         }
 
         h2 {
-            color: #1565c0;
+            color: #c62828;
             margin-bottom: 20px;
         }
 
@@ -35,7 +35,7 @@
 
         a {
             text-decoration: none;
-            background-color: #1565c0;
+            background-color: #c62828;
             color: white;
             padding: 10px 20px;
             border-radius: 8px;
@@ -43,7 +43,7 @@
         }
 
         a:hover {
-            background-color: #0d47a1;
+            background-color: #8e0000;
         }
 
         .footer {
@@ -55,16 +55,10 @@
 </head>
 <body>
 
-<div class="container">
-    <%
-        System.out.println("===> Maintenant dans ForwardTarget.jsp");
-    %>
-
-    <h2>Page de destination du Forward</h2>
-    <p>Le traitement a été transféré ici avec succès !</p>
-
-    <a href="login.jsp">Retour à la page de connexion</a>
-
+<div class="message-box">
+    <h2>Échec de l'authentification ❌</h2>
+    <p>Login ou mot de passe incorrect.<br>Veuillez réessayer.</p>
+    <a href="login.jsp">Retour</a>
     <div class="footer">© 2025 ENSA Khouribga</div>
 </div>
 
